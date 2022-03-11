@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+    font-family: arial;
+
+}
+
+nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+
+}
+nav li{
+    display:inline-block;
+
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    height: 25px;
+    width: 50px;
+    display: block;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: arial;
+    text-align:center;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    
+}
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a::after{
+    content:"";
+    display: block;
+    background-color: white; 
+    height: 3px;
+    width: 0;
+    left: 0;
+    transition: 0.3s;
+
+   
+    
+
+}
+a:hover:after{
+    width: 75px;
+}
+
+img{
+    transition: 1.2s;
+}
