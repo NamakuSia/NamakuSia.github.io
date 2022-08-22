@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    
+
+<head>
+    <title>
+        Website
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js">
+
+    </script>
+</head>
+
+<body><input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    
+   
+ 
+      <nav class="bar">
+              <li ><a href="https://youtu.be/iik25wqIuFo" target="blank" class="lmao">RickRoll</a></li>
+              <li ><a href="#" class="lmao">Contact</a></li>
+              <li ><a href="awikwok.html" target=blank >Ds2Boss</a></li>
+              </nav>
+
+              <img src="20220310_221307.png" height="250px" width="250px" style="display:block; margin:auto;"> 
+              <div class="sidebar">
+                  <header>Sidebar</header>
+                  <ul>
+                      <li><a href="#"><i class="fas fa-link"></i>HTML</a></li>
+                      <li><a href="#"><i class="fas fa-link"></i>CSS</a></li>
+                      
+                  </ul>
+              </div>
+              
+
+              
+
+              <a> <button type="submit" class="buton" onclick="openPopup()">Contact Me!</button>   </a>
+              <div class= "popup" id="popup">
+                
+                <h1 class="Tulisan">Hypertext Markup Language, a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages.
+                    "an HTML file"</h1>
+                    
+                    <button type="button" onclick="closePopup()" class="baten">Back</button>
+              </div>
+
+            
+              
+              <script>
+                let popup = document.getElementById("popup");
+                function openPopup(){
+                    popup.classList.add("open-popup");
+
+                    
+
+                }
+
+                function closePopup(){
+                    popup.classList.remove("open-popup");
+                }
+              </script>
+             
+              
+         
+
+</body>
+
+
+</html>

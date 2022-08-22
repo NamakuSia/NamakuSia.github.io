@@ -1,0 +1,235 @@
+.buton{
+    
+    color: black;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+   position: absolute;
+   left: 570px;
+   height: auto;
+   font-size: 15px;
+   padding: 15px;
+   font-weight: bolder;
+   background-color: white;
+   border-radius: 7px;  
+   cursor: pointer;
+   transition: 0.7s;
+   border-color: black;
+   
+}
+
+.buton:hover{
+    background-color: black;
+    color: white;
+    border-color: white;
+    
+}
+
+
+
+
+
+
+body{
+   background-image: url(bgkeren.jpg);
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+
+}
+nav li  {
+    display:inline-block;
+
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    height: 25px;
+    width: 50px;
+    display: block;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: arial;
+    text-align:center;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    
+}
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bar a::after{
+    content:"";
+    display: block;
+    background-color: white; 
+    height: 2px;
+    width: 0;
+    left: 0;
+    transition: 0.5s;
+
+   
+    
+
+}
+.bar a:hover:after{
+    width: 75px;
+}
+
+
+
+
+.sidebar{
+position:fixed;
+left:-250px;
+width:250px;
+height:100%;
+top: 0px;
+background: white;
+transition: all .5s ease;
+
+
+}
+
+.sidebar header{
+    font-size:35px;
+    font-family : monospace ;
+    color: black;
+    text-align: center;
+    line-height:70px;
+    background: wheat;
+
+}
+
+.sidebar ul li{
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba( 255,255,255, .1 );
+    transition: 0.5s;
+}
+
+.sidebar ul a{
+    display:block;
+    height:100%;
+    width:100%;
+    line-height:65px;
+    font-size:30px;
+    color:black;
+    text-decoration: none;
+    
+    
+   
+   
+}
+
+ul li:hover {
+    padding-left:50px;
+}
+
+*{
+    list-style:none;
+    margin:0;
+    padding: 0;
+}
+
+.sidebar ul a i{
+    margin-right: 16px;
+
+}
+#check{
+    display: none;
+}
+label #btn,label #cancel{
+    position:absolute;
+    cursor:pointer;
+    border-radius: 3px;
+    
+}
+label #btn{
+    left:40px;
+    top:10px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all 0.5s;
+    z-index: 50;
+
+}
+label #cancel{
+    z-index:1111;
+    left:-195px;
+    top:5px;
+    font-size:20px;
+    color:black;
+    transition: all .4s ease;
+
+}
+
+#check:checked ~ .sidebar{
+    left:0;
+}
+
+#check:checked ~ label #btn{
+    left:250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left:220px;
+    
+}
+
+#check:checked ~ body{
+    margin-left:250px;
+}
+
+
+
+
+.popup{
+    width: 350px;
+    height: 250px;
+    background: #D97702;
+    font-size: 9px;
+    border-radius: 10px;
+    position: relative;
+    left: 475px;
+    text-align: center;
+    transform: translate(-4%,-50%) scale(0.0001);
+    visibility: hidden;
+    transition:  0.4s;
+    
+    
+    
+    
+    
+}
+
+.open-popup{
+    visibility: visible;
+    transform: translate(-4%,-50%) scale(1);
+}
+
+.baten{
+    padding: 9px;
+    background:  #F3D8B2;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    font-weight: bolder;
+    top: 50px;
+    
+}
+
+.Tulisan{
+    padding-top: 10px;
+}
+
